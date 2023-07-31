@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Counter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your Cash Register</h1>
+    </header>
+
+    <main>
+      <form onsubmit="return false">
+        <label for="amount-of-bill">Bill Amount</label>
+        <input
+          type="number"
+          onkeypress="return event.charCode >= 48"
+          min="1"
+          name="amount-of-bill"
+          id="amount-of-bill"
+        />
+        <label for="amount-of-cash-given">Cash Given</label>
+        <input
+          type="number"
+          onkeypress="return event.charCode >= 48"
+          min="1"
+          name="amount-of-cash-given"
+          id="amount-of-cash-given"
+        />
+        <input type="submit" value="Check" id="check-btn" />
+      </form>
+      <div class="balance-amount">
+        <table>
+          <tbody>
+            <tr>
+              <th>Notes</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>200</td>
+              <td>100</td>
+              <td>50</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>No. of Notes</th>
+              <td id="no-of-2000-notes"></td>
+              <td id="no-of-500-notes"></td>
+              <td id="no-of-200-notes"></td>
+              <td id="no-of-100-notes"></td>
+              <td id="no-of-50-notes"></td>
+              <td id="no-of-20-notes"></td>
+              <td id="no-of-10-notes"></td>
+              <td id="no-of-5-notes"></td>
+              <td id="no-of-1-notes"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

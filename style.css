@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #acf8f1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Bungee Spice", cursive;
+}
+
+h1 {
+  font-size: xxx-large;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+}
+
+label,
+input {
+  margin: auto;
+}
+
+input {
+  margin-bottom: 3rem;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: large;
+  text-align: center;
+}
+
+#check-btn {
+  width: 30%;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#check-btn:hover {
+  background-color: rgb(146, 235, 142);
+  color: #8e6231;
+}
+
+th,
+td {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+  padding: 1rem;
+  text-align: center;
+  font-size: large;
+}
+
+@media screen and (max-width: 565px) {
+  th,
+  td {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  th,
+  td {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+}
